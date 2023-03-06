@@ -1,0 +1,182 @@
+:root {
+    --dongker: #060047;
+    --abu: #20262E;
+}
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: #080808;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+    min-height: 2000;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Raleway';
+    color: #080808;
+}
+
+.wrapper .logo span{
+    color: #287dd7;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom: 1px solid #666;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #080808;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}    
+
+nav ul li a:hover {
+   text-decoration: underline; 
+   /* color: #645CBB;  */
+      
+}
+
+/* booking sect */
+.booking {
+    font-family: 'comic sans ms';
+    text-align: center;
+    color: #eee;
+    margin-bottom: 3rem;
+    padding: 1rem 7% 1.4rem;
+    padding-bottom: 20px;
+    /* margin-top: 165px; */
+}
+
+.row {
+    /* display: flex; */
+}
+.booking .row {
+    margin-top: 2rem;
+    background-color: #222;
+    flex-wrap: wrap;
+}
+
+.booking .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.booking .row .form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.booking .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #000000;
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.booking .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+}
+
+.booking .row form .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #080808;
+    cursor: pointer;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    color: #eee;
+    background-color: #332C39;
+}
+
+@media  screen and (max-width: 991.98px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .logo a{
+        display: block;
+        text-align: center;
+        padding-left: 40px;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+}
